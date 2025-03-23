@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Features</title>
+</head>
+<body>
+    <!-- Here, I am creating an ordered list with Roman numerals -->
+    <h1>Ordered List</h1>
+    <ol type="I">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+
+    <!-- This is where I add an external image from Pexels-->
+    <h1>African scenery</h1>
+    <img src="https://images.pexels.com/photos/391230/pexels-photo-391230.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Beautiful Scenery">
+
+    <!-- Now, I am adding a table of 5 contacts, their names and their  -->
+    <h1>Contacts</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Mobile</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Sipho Maseko</td>
+                <td>123 Zulu Street</td>
+                <td>+27 82 123 4567</td>
+                <td>dragonfruit47@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Ayo Okeke</td>
+                <td>456 Ubuntu Avenue</td>
+                <td>+27 81 987 6543</td>
+                <td>mangoescape99@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Thandiwe Ndlovu</td>
+                <td>789 Heritage Road</td>
+                <td>+27 83 555 7890</td>
+                <td>bluepineapple73@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Kabelo Molefe</td>
+                <td>321 Rainbow Drive</td>
+                <td>+27 84 444 1234</td>
+                <td>sunshinepear51@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Zola Dlamini</td>
+                <td>654 Freedom Blvd</td>
+                <td>+27 82 333 9876</td>
+                <td>cosmiclychee88@gmail.com</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Here, I am adding a registration form with all the required fields and validation -->
+    <h1>Registration Form</h1>
+    <form action="/submit" method="post">
+        <!-- This is where I ask for the user's name -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        <br>
+        
+        <!-- Here, I ask for the user's email with proper validation -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <br>
+        
+        <!-- This field is for the user's password -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        <br>
+        
+        <!-- Asking for the user's date of birth -->
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+        <br>
+
+        <!-- Here, I include gender selection with radio buttons -->
+        <label for="gender">Gender:</label>
+        <br>
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label>
+        <br>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label>
+        <br>
+        
+        <!-- Adding a section for interests with checkboxes -->
+        <label for="interests">Interests:</label>
+        <br>
+        <input type="checkbox" id="coding" name="interests" value="Coding">
+        <label for="coding">Coding</label>
+        <br>
+        <input type="checkbox" id="design" name="interests" value="Design">
+        <label for="design">Design</label>
+        <br>
+
+        <!-- This is where the user can select their role using a dropdown -->
+        <label for="role">Role:</label>
+        <select id="role" name="role" required>
+            <option value="student">Student</option>
+            <option value="teacher">Teacher</option>
+            <option value="developer">Developer</option>
+        </select>
+        <br>
+
+        <!-- This is the submit button to register -->
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>
